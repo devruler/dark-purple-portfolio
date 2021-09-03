@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode, useRef } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import About from './sections/About';
@@ -12,10 +12,13 @@ import Hero from './sections/Hero';
 import Footer from './sections/Footer';
 import AnimatedBackground from './components/AnimatedBackground';
 
+import { gsap } from "gsap";
+
 function App() {
+
   return (
     <div className="app container">
-      <Header></Header>
+      <Header ></Header>
       <About></About>
       <Projects></Projects>
       <Skills></Skills>

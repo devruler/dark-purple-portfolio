@@ -3,7 +3,8 @@ import HeaderImg from "../assets/images/header-img.svg";
 import Menu from "../components/Menu";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<Boolean>(false);
+
   return (
     <div className="relative overflow-hidden h-screen">
       <header className="absolute top-0 left-0 right-0">
@@ -22,14 +23,14 @@ function Header() {
                 <path
                   d="M4 6H20M4 12H20M4 18H20"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
               </svg>
             </button>
 
-            {isMenuOpen && <Menu></Menu>}
+            <Menu isOpen={isMenuOpen}></Menu>
           </div>
         </nav>
       </header>
