@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,13 +21,12 @@ html {
   height: 8px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #3a0c53;
-  border-radius: 20px;
+  background: #303030;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(66, 11, 66);
+  background: rgb(54, 54, 54);
 }
 ::-webkit-scrollbar-track {
-  background: #551961;
+  background: #747474;
   box-shadow: inset 0px 0px 0px 0px #f0f0f0;
 }

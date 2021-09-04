@@ -12,12 +12,10 @@ import Hero from './sections/Hero';
 import Footer from './sections/Footer';
 import AnimatedBackground from './components/AnimatedBackground';
 
-import { gsap } from "gsap";
-
 function App() {
 
   return (
-    <div className="app container">
+    <div className="app container mx-auto">
       <Header ></Header>
       <About></About>
       <Projects></Projects>

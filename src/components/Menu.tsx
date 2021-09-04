@@ -15,7 +15,7 @@ function Menu({isOpen}: {isOpen: Boolean}) {
 
     switch (isOpen) {
       case true:
-        gsap.to(menuRef.current, { height: "auto", opacity: 100, duration: .2});
+        gsap.to(menuRef.current, { height: "auto", opacity: 100, paddingTop: 15, paddingBottom: 20, duration: .2});
         break;
       default:
         gsap.to(menuRef.current, { height: 0, padding: 0, duration: .3});

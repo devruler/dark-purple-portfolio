@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Heading from "../components/Heading";
-import ProjectModal from "../components/ProjectModal";
+// import ProjectModal from "../components/ProjectModal";
 import ChatAppImgOne from "../assets/images/chat_app_1.jpg";
 import ShopperrImgOne from "../assets/images/shopperr_1.jpg";
 import HoteluxImgOne from "../assets/images/hotelux_1.jpg";
@@ -53,7 +53,7 @@ function Projects() {
 
   const projectsStyles = {
     cards: {
-      minHeight: "670px",
+      minHeight: "560px",
     },
   };
 
@@ -86,7 +86,7 @@ function Projects() {
               <figure className="absolute h-full bg-gradient-to-t from-black to-gray-800">
                 <img
                   src={project.img}
-                  className="object-cover h-full w-full opacity-10"
+                  className="object-cover object-top h-full w-full opacity-10 im"
                 />
               </figure>
               <div className="justify-end card-body z-50 text-white">
@@ -104,18 +104,18 @@ function Projects() {
                 <div className="card-actions transform translate-y-80" id={"actions-" + index}>
                 <a
                     href="#projects"
-                    className="btn"
+                    className="btn btn-sm"
                     onClick={() => window.open(project.img)}
                   >
-                    <img src={EyeIcon} alt="eye icon" className="h-5 w-5 mr-2"/>
+                    <img src={EyeIcon} alt="eye icon" className="h-4 w-4 mr-2"/>
                     View
                   </a>
                   <a
                     href="#projects"
-                    className="btn"
+                    className="btn btn-sm"
                     onClick={() => window.open(project.links.github)}
                   >
-                    <img src={GithubIcon} alt="github icon" className="h-5 w-5 mr-2" />
+                    <img src={GithubIcon} alt="github icon" className="h-4 w-4 mr-2" />
                     Github
                   </a>
                 </div>
@@ -124,7 +124,7 @@ function Projects() {
           );
         })}
       </div>
-      <ProjectModal project={selectedProject}></ProjectModal>
+      {/* <ProjectModal project={selectedProject}></ProjectModal> */}
     </div>
   );
 }
