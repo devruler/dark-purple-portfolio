@@ -87,7 +87,7 @@ li a {
     /* Override the font-size specified earlier (36px) for all navigation links */
 }
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
     .overlay {
         overflow-y: auto;
     }
@@ -99,4 +99,4 @@ li a {
         top: 15px;
         right: 35px;
     }
-}
+} */

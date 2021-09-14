@@ -9,11 +9,10 @@ function OverlayMenu({isOpen, setIsMenuOpen}: {isOpen: Boolean, setIsMenuOpen: (
             <XIcon className="closebtn text-yellow-400 h-10 w-10" onClick={() => setIsMenuOpen(false)}></XIcon>
     
             <div className="overlay-content overflow-x-hidden">
-                <a href="#about-me" onClick={() => setIsMenuOpen(false)}>About Me</a>
+                <a href="#about-me" onClick={() => setIsMenuOpen(false)}>About & Resume</a>
                 <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
                 <a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
                 <a href="#contact-me" onClick={() => setIsMenuOpen(false)}>Contact</a>
-                
             </div>
             
     

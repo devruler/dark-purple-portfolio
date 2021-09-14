@@ -12,9 +12,9 @@ function Header() {
         <nav className="container mx-auto px-6 md:px-12 py-6">
           <div>
             <button
-              className="text-white focus:outline-none relative"
+              className="text-white focus:outline-none relative cursor-pointer z-20"
               id="menu-button"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={() => {console.log('clicked');setIsMenuOpen(!isMenuOpen)}}
             >
               <svg
                 className="h-12 w-12"
@@ -31,18 +31,22 @@ function Header() {
                 ></path>
               </svg>
             </button>
-        <OverlayMenu isOpen={isMenuOpen} setIsMenuOpen={(isOpen: Boolean) => setIsMenuOpen(isOpen)}></OverlayMenu>
+            
             {/* <Menu isOpen={isMenuOpen} setIsMenuOpen={(isOpen: Boolean) => setIsMenuOpen(isOpen)}></Menu> */}
           </div>
+          <OverlayMenu
+              isOpen={isMenuOpen}
+              setIsMenuOpen={(isOpen: Boolean) => setIsMenuOpen(isOpen)}
+            ></OverlayMenu>
         </nav>
       </header>
       <div className="container mx-auto px-6 md:px-12 relative transform -translate-y-1/2 top-1/2 flex items-center py-32 xl:py-40">
-        <div className="w-full flex flex-col items-center relative space-y-8">
-          <h1 className="font-extrabold font-mono text-7xl text-center sm:text-8xl text-white leading-tight">
+        <div className="w-full flex flex-col items-center relative space-y-5 md:space-y-8">
+          <h1 className="sm:text-6xl font-extrabold md:text-8xl font-mono text-5xl text-center text-white leading-tight">
             Reda Ifis
           </h1>
-          <p className="text-white">Full Stack Web Developer</p>
-          <a href="#contact-me" className="btn rounded-md">
+          <p className="text-white text-sm md:text-base">Full Stack Web Developer</p>
+          <a href="#contact-me" className="btn rounded-md btn-sm md:btn-primary">
             Contact Me
           </a>
         </div>

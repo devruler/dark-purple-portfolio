@@ -14,6 +14,7 @@ import TailwindCssIcon from "../assets/images/tailwindcss.svg";
 import HtmlIcon from "../assets/images/html.svg";
 import CssIcon from "../assets/images/css.svg";
 import LinuxIcon from "../assets/images/linux.svg";
+import SeoIcon from "../assets/images/seo.svg";
 
 
 
@@ -79,6 +80,11 @@ function Skills() {
         value: "65",
         icon: LinuxIcon
       },
+      {
+        name: "Seo",
+        value: "80",
+        icon: SeoIcon
+      },
     ],
   };
 
@@ -126,7 +132,7 @@ function Skills() {
 
         <div className="card shadow-2xl lg:card-side bg-white text-gray-800">
           <div className="card-body space-y-4">
-            <h2 className="card-title">Other Tools</h2>
+            <h2 className="card-title">Other</h2>
             {skills.tools.map((tool, index) => {
               return (
                 <div key={index}>
